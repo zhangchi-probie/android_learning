@@ -10,6 +10,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 builder.setSmallIcon(R.mipmap.ic_launcher_round)
                         .setContentTitle("ticker title")
                         .setContentText("this is ticket text 2")
+                        .setStyle(new NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(getResources(),R.drawable.big_img)))
                         .setAutoCancel(true)//打开程序后图标消失
                         .setOngoing(true)//左滑不消失
                         .setPriority(NotificationCompat.PRIORITY_LOW)
