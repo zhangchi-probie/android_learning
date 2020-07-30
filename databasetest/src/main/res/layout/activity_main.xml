@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="50dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加数据"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新数据"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除数据"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/list_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="遍历数据"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="333dp"
+        android:layout_height="38dp"
+        android:text="Create Table"
+        android:layout_gravity="center"
+       />
+
+</LinearLayout>

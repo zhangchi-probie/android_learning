@@ -1,0 +1,7 @@
+include ':notificationtest'
+include ':contentproviderapplication'
+include ':databasetest'
+include ':savedata'
+include ':broadcastreceiveractivity'
+include ':app'
+rootProject.name = "My Application"
